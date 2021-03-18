@@ -103,7 +103,7 @@ function App({
       id: 'trips1',
       data: trips[1],
       getPath: d => d.path,
-      getTimestamps: d => d.timestamps.map(function(x) { return x + 4758.87; }),
+      getTimestamps: d => d.timestamps.map(function(x) { return x + 4758.87; }), // time delta hack to sync up timestamp arrays
       getColor: d => (d.name === "abca00" ? theme.trailColor1 : theme.trailColor0),
       opacity: 0.3,
       widthMinPixels: 5,
