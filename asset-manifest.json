@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.js": "/deckgl-adsbx/static/js/main.21ed4240.chunk.js",
-    "main.js.map": "/deckgl-adsbx/static/js/main.21ed4240.chunk.js.map",
+    "main.js": "/deckgl-adsbx/static/js/main.f5973138.chunk.js",
+    "main.js.map": "/deckgl-adsbx/static/js/main.f5973138.chunk.js.map",
     "runtime-main.js": "/deckgl-adsbx/static/js/runtime-main.c0bbe819.js",
     "runtime-main.js.map": "/deckgl-adsbx/static/js/runtime-main.c0bbe819.js.map",
-    "static/js/2.19289178.chunk.js": "/deckgl-adsbx/static/js/2.19289178.chunk.js",
-    "static/js/2.19289178.chunk.js.map": "/deckgl-adsbx/static/js/2.19289178.chunk.js.map",
+    "static/js/2.46bd826f.chunk.js": "/deckgl-adsbx/static/js/2.46bd826f.chunk.js",
+    "static/js/2.46bd826f.chunk.js.map": "/deckgl-adsbx/static/js/2.46bd826f.chunk.js.map",
     "index.html": "/deckgl-adsbx/index.html",
-    "static/js/2.19289178.chunk.js.LICENSE.txt": "/deckgl-adsbx/static/js/2.19289178.chunk.js.LICENSE.txt"
+    "static/js/2.46bd826f.chunk.js.LICENSE.txt": "/deckgl-adsbx/static/js/2.46bd826f.chunk.js.LICENSE.txt",
+    "static/js/mapbox-gl-csp-worker.1e44a503.worker.js": "/deckgl-adsbx/static/js/mapbox-gl-csp-worker.1e44a503.worker.js",
+    "static/js/mapbox-gl-csp-worker.1e44a503.worker.js.map": "/deckgl-adsbx/static/js/mapbox-gl-csp-worker.1e44a503.worker.js.map"
   },
   "entrypoints": [
     "static/js/runtime-main.c0bbe819.js",
-    "static/js/2.19289178.chunk.js",
-    "static/js/main.21ed4240.chunk.js"
+    "static/js/2.46bd826f.chunk.js",
+    "static/js/main.f5973138.chunk.js"
   ]
 }
