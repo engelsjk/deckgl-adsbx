@@ -5,6 +5,7 @@ import mapboxgl from "mapbox-gl";
 import DeckGL from '@deck.gl/react';
 import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core';
 import {TripsLayer} from '@deck.gl/geo-layers';
+import {interpolateWarm} from 'd3-scale-chromatic';
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
@@ -59,6 +60,8 @@ const INITIAL_VIEW_STATE = {
 // const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-nolabels-gl-style/style.json';
 const MAP_STYLE = "mapbox://styles/mapbox/dark-v10"
 
+function norm(val, max, min) { return (val - min) / (max - min); }
+
 function App({
   trips = DATA_URL.TRIPS,
   trailLength = 1000,
@@ -91,7 +94,8 @@ function App({
       data: trips[0],
       getPath: d => d.path,
       getTimestamps: d => d.timestamps,
-      getColor: d => (d.name === "ab1fbb" ? theme.trailColor0 : theme.trailColor1),
+      // getColor: d => (d.name === "ab1fbb" ? theme.trailColor0 : theme.trailColor1),
+      getColor: d => d.path.map(x => interpolateWarm(1-norm(x[2],40000,0)).match(/\d+/g).map(Number)),
       opacity: 0.3,
       widthMinPixels: 5,
       rounded: true,
@@ -104,7 +108,8 @@ function App({
       data: trips[1],
       getPath: d => d.path,
       getTimestamps: d => d.timestamps.map(function(x) { return x + 4758.87; }), // time delta hack to sync up timestamp arrays
-      getColor: d => (d.name === "abca00" ? theme.trailColor1 : theme.trailColor0),
+      // getColor: d => (d.name === "abca00" ? theme.trailColor1 : theme.trailColor0),
+      getColor: d => d.path.map(x => interpolateWarm(1-norm(x[2],40000,0)).match(/\d+/g).map(Number)),
       opacity: 0.3,
       widthMinPixels: 5,
       rounded: true,
