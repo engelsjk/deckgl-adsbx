@@ -1,9 +1,13 @@
 /* global window */
 import React, {useState, useEffect} from 'react';
 import ReactMapGL from 'react-map-gl';
+import mapboxgl from "mapbox-gl";
 import DeckGL from '@deck.gl/react';
 import {AmbientLight, PointLight, LightingEffect} from '@deck.gl/core';
 import {TripsLayer} from '@deck.gl/geo-layers';
+
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
