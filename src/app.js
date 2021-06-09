@@ -15,8 +15,8 @@ const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 // Source data CSV
 const DATA_URL = {
    TRIPS: [
-     'https://raw.githubusercontent.com/engelsjk/adsbxutils/main/flightpathdata/deckgl/trace_full_ab1fbb_deckgl.json', // eslint-disable-line
-     'https://raw.githubusercontent.com/engelsjk/adsbxutils/main/flightpathdata/deckgl/trace_full_abca00_deckgl.json', // eslint-disable-line
+     'https://raw.githubusercontent.com/engelsjk/deckgl-adsbx/main/data/trace_full_ab1fbb_deckgl.json', // eslint-disable-line
+     'https://raw.githubusercontent.com/engelsjk/deckgl-adsbx/main/data/trace_full_abca00_deckgl.json', // eslint-disable-line
    ]
 };
 
