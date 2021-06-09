@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/deckgl-adsbx/static/js/main.3568975c.chunk.js",
-    "main.js.map": "/deckgl-adsbx/static/js/main.3568975c.chunk.js.map",
+    "main.js": "/deckgl-adsbx/static/js/main.d930c85e.chunk.js",
+    "main.js.map": "/deckgl-adsbx/static/js/main.d930c85e.chunk.js.map",
     "runtime-main.js": "/deckgl-adsbx/static/js/runtime-main.c0bbe819.js",
     "runtime-main.js.map": "/deckgl-adsbx/static/js/runtime-main.c0bbe819.js.map",
     "static/js/2.963baba1.chunk.js": "/deckgl-adsbx/static/js/2.963baba1.chunk.js",
@@ -14,6 +14,6 @@
   "entrypoints": [
     "static/js/runtime-main.c0bbe819.js",
     "static/js/2.963baba1.chunk.js",
-    "static/js/main.3568975c.chunk.js"
+    "static/js/main.d930c85e.chunk.js"
   ]
 }
